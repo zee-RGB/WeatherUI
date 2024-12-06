@@ -14,7 +14,7 @@ struct ContentView: View {
 
     var body: some View {
         ZStack {
-            //BackgroundColor. The $ makes the @State var binding
+            //BackgroundColor
             BackgroundView(isDark: isDark)
 
             VStack {
@@ -123,7 +123,7 @@ struct WeatherDayView: View {
 //BackGroundcolour color of the screen
 struct BackgroundView: View {
 
-    //isDark needs to keep State -> @Binding binds state to @State and chages variable
+    //isDark @State variable
     var isDark: Bool
 
     var body: some View {
@@ -172,23 +172,3 @@ struct DayWeatherView: View {
     }
 }
 
-//ButtonView
-//struct ButtonView: View {
-//    var buttonText: String
-//
-//    var body: some View {
-//
-//            Button(buttonText) {
-//
-//            }
-//                .padding()
-//                .font(.system(size: 20, weight: .bold, design: .default))
-//                .foregroundStyle(.blue)
-//                .frame(width: 250, height: 50)
-//                .background(Color.white)
-//                .cornerRadius(15)
-//                .padding(30)
-//
-//
-//    }
-//}
